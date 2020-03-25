@@ -1,0 +1,13 @@
+<hr>
+1<div class="row">
+    <div class="col-xs-12">
+        <a href="#" class="list-group-item clearfix" *ngFor="let athlete of athletes">
+            <div class="pull-left">
+                <h4 class="list-group-item-heading">{{athlete.firstname}} {{athlete.name}}</h4>
+            </div>
+            <span class="pull-right">
+                <img [src]="athlete.country" class="img-responsive image-country">
+            </span>
+        </a>
+    </div>
+</div>

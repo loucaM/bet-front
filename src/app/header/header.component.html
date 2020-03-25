@@ -1,5 +1,6 @@
-
-<nav class="navbar navbar-expand-sm bg-light">
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <!-- Brand -->
+  <a class="navbar-brand" href="#">Let bet !</a>
 
   <!-- Links -->
   <ul class="navbar-nav">
@@ -9,9 +10,19 @@
     <li class="nav-item">
       <a class="nav-link" href="#">Link 2</a>
     </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link 3</a>
-    </li>
   </ul>
 
+  <!-- Dropdown -->
+  <ul class="nav navbar-nav ml-auto">
+    <li class="nav-item dropdown">
+      <a  routerLink="/admin" class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Admin
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" routerLink="admin/athlete" href="#">athlete</a>
+        <a class="dropdown-item" href="#">Link 2</a>
+        <a class="dropdown-item" href="#">Link 3</a>
+      </div>
+    </li>
+  </ul>
 </nav>

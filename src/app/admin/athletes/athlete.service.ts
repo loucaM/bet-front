@@ -13,7 +13,7 @@ import { Athlete } from './athlete.model';
         })
       };
 
-@Injectable()
+@Injectable({providedIn:'root'})
 export class AthletesService {
 athleteUrl = 'api/heroes';
 

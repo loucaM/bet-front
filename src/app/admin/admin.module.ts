@@ -2,19 +2,21 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
-import { AthleteComponent } from './athlete/athlete.component';
+import { AddAthleteComponent } from './athletes/athlete-to-add/add-athlete.component';
 import { adminRoutingModule } from './adminRoutingModule.module';
-import { AthletesService } from './athlete/athlete.service';
+import { AthleteListComponent } from './athletes/athlete-list/athlete-list.component';
+import { AdminComponent } from './admin.component';
+import { AthleteDetailComponent } from './athletes/athlete-detail/athlete-detail.component';
 
 @NgModule({
-  declarations: [AthleteComponent],
+  declarations: [AdminComponent, AddAthleteComponent, AthleteListComponent, AthleteDetailComponent],
   imports: [
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
-    adminRoutingModule
+    adminRoutingModule,
   ],
-  providers: [AthletesService]
+  providers: []
 })
 
 export class AdminModule { }
