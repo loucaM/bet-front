@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Athlete } from './athletes/athlete.model';
 
 @Component({
   selector: 'app-admin',
@@ -6,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./admin.component.sass']
 })
 export class AdminComponent implements OnInit {
+
+athletes: Athlete[] = [
+    new Athlete('Vicaut', 'Jimmy', 'https://image.flaticon.com/icons/svg/197/197560.svg'),
+    new Athlete('Bolt','Usain','https://image.flaticon.com/icons/svg/197/197611.svg')  ]
 
   constructor() { }
 

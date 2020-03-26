@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input} from '@angular/core';
 import { Athlete } from '../athlete.model';
 
 @Component({
@@ -8,9 +8,8 @@ import { Athlete } from '../athlete.model';
 })
 export class AthleteListComponent implements OnInit {
 
-  athletes: Athlete[] = [
-    new Athlete('Vicaut', 'Jimmy', 'https://image.flaticon.com/icons/svg/197/197560.svg'),
-    new Athlete('Bolt','Usain','https://image.flaticon.com/icons/svg/197/197611.svg')  ]
+  @Input('athlete') athlete: Athlete;
+
   constructor() { }
 
   ngOnInit(): void {
