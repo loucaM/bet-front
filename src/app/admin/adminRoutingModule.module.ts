@@ -4,7 +4,7 @@ import { AdminComponent } from './admin.component';
 import { AddAthleteComponent } from './athletes/athlete-to-add/add-athlete.component';
 
 
-const routes: Routes = [{ path: 'add-athlete', component: AddAthleteComponent},
+const routes: Routes = [{path: 'add-athlete', component: AddAthleteComponent},
                         {path: '', component: AdminComponent}];
 
 @NgModule({

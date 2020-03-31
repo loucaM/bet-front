@@ -1,5 +1,6 @@
 import { Component, OnInit, Input} from '@angular/core';
 import { Athlete } from '../athlete.model';
+import { AthletesService } from 'src/app/shared/athlete.service';
 
 @Component({
   selector: 'app-athlete-list',
@@ -8,11 +9,15 @@ import { Athlete } from '../athlete.model';
 })
 export class AthleteListComponent implements OnInit {
 
-  @Input('athlete') athlete: Athlete;
+ selectedAthlete: Athlete;
 
-  constructor() { }
+  constructor(private athletesService: AthletesService) { }
 
   ngOnInit(): void {
+    this.athletesService.athleteSelected.subscribe(
+      (athlete: Athlete) => {
+        this.selectedAthlete = athlete;
+      }
+    )
   }
-
 }

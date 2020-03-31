@@ -7,7 +7,6 @@ import { adminRoutingModule } from './adminRoutingModule.module';
 import { AthleteListComponent } from './athletes/athlete-list/athlete-list.component';
 import { AdminComponent } from './admin.component';
 import { AthleteDetailComponent } from './athletes/athlete-detail/athlete-detail.component';
-import { HttpClient } from '@angular/common/http';
 
 @NgModule({
   declarations: [AdminComponent, AddAthleteComponent, AthleteListComponent, AthleteDetailComponent],
@@ -16,7 +15,6 @@ import { HttpClient } from '@angular/common/http';
     FormsModule,
     ReactiveFormsModule,
     adminRoutingModule
-    
   ],
   providers: []
 })

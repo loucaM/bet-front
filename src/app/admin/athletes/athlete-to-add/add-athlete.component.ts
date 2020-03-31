@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder } from '@angular/forms';
-import { AthletesService } from '../athlete.service';
+import { AthletesService } from '../../../shared/athlete.service';
 import { Athlete } from '../athlete.model';
 
 @Component({
